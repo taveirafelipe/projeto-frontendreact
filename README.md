@@ -1,3 +1,12 @@
+https://www.flaticon.com/br/packs/e-commerce-213
+
+Plaeta de cores:
+Color 1: #1f0z1d;
+Color 2: #334f53;
+Color 3: #45936c;
+Color 4: #9acc77;
+Color 5: #e5ead4;
+
 # projeto-frontendreact
 
 Esse é o projeto de introdução aos fundamentos do React. Aqui, vamos praticar a estrutura do que consideramos a estrutura do React. O objetivo é que funcione como o front-end de um E-Commerce

@@ -35,14 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  },
-  
-  "homepage": "https://taveirafelipe.github.io/projeto-frontendreact",
-  "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+  }
 }
