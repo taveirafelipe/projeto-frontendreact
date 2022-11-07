@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: lightgrey;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(229,234,212,1) 90%);
     width: 20%;
     max-width: 220px;
     min-width: 200px;
     height: 500px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
+    border: 1px solid #e5ead4;
     text-align: center;
     justify-content: center;
+    // box-shadow: 2px 2px 5px grey;
 `
 export const Title = styled.h2`
     padding: 3% 0 3% 0;
+    color: #334f53;
 `
 export const Img = styled.img`
     width: 100%;
@@ -19,6 +23,7 @@ export const Img = styled.img`
     object-fit: cover;
 `
 export const Value = styled.h2`
+    color: #334f53;
 `
 export const ButtonAmount = styled.button`
     padding: 10px;
@@ -39,16 +44,37 @@ export const ButtonBuy = styled.button`
     height: 40px;
     border: none;
     font-size: 17px;
-    background-color: lightblue;
-    color: grey;
+    background-color: #e5ead4;
+    color: #334f53;
 
     &:hover{
-      color:black;
+      color: #334f53;
     }
   
     &:active{
-      background-color: blue;
+      background-color: #334f53;
       color: white;
     }
     
+`
+export const SvgHeart = styled.svg`
+    // position: relative;
+    // top: 10px;
+    // left: 80px;
+    // fill: green;
+`
+export const ButtonHeart = styled.button`
+    position: relative;
+    top: 10px;
+    left: 80px;
+    fill: rgba(229,234,212,0.6306897759103641);
+    background: transparent;
+    border: none;
+`
+export const Absolute = styled.div`
+    position: absolute;
+`
+export const Div = styled.div`
+    position: relative;
+    top: 285px;
 `
