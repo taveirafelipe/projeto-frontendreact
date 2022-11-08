@@ -84,6 +84,22 @@ export const Image = styled.img`
   jutify-self: center;
   align-items: center;
 `
+export const ImageCart = styled.img`
+  height: 30px;
+  jutify-self: center;
+  align-items: center;
+  position: absolute;
+`
+export const SvgCart = styled.svg`
+    position: relative;
+    top: -3px;
+    left: 23px;
+`
+export const Text = styled.text`
+    position: relative;
+    top: -3px;
+    left: 23px;
+`
 //MAIN
 export const Container = styled.div`
   display: flex;
