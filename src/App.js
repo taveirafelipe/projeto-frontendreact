@@ -17,10 +17,11 @@ const GlobalStyled = createGlobalStyle`
 function App() {
   const [page, setPage] = useState(2);
   const [cart, setCart] = useState([]);
+  const [name, setName] = useState("Felipe");
 
   const home = () => setPage(1);
   const items = () => setPage(2);
-  
+  const cartPage = () => setPage(3);
 
   switch (page) {
     case 1:
@@ -31,6 +32,8 @@ function App() {
           cart={cart}
           setCart={setCart}
           home={home}
+          items={items}
+          cartPage={cartPage}
           />
         </MainContainer>
       );
@@ -42,6 +45,9 @@ function App() {
           cart={cart}
           setCart={setCart}
           home={home}
+          items={items}
+          cartPage={cartPage}
+          name={name}
           />
         </MainContainer>
       );
@@ -53,6 +59,9 @@ function App() {
           cart={cart}
           setCart={setCart}
           home={home}
+          items={items}
+          cartPage={cartPage}
+          name={name}
           />
         </MainContainer>
       );

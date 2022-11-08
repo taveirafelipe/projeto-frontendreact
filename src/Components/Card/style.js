@@ -7,7 +7,7 @@ export const Container = styled.div`
     max-width: 220px;
     min-width: 200px;
     height: 500px;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     border: 1px solid #e5ead4;
     text-align: center;
     justify-content: center;
@@ -67,7 +67,6 @@ export const ButtonHeart = styled.button`
     position: relative;
     top: 10px;
     left: 80px;
-    fill: rgba(229,234,212,0.6306897759103641);
     background: transparent;
     border: none;
 `

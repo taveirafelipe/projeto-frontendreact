@@ -16,7 +16,7 @@ import Dados from "../Dados/Dados.json";
 
 const Card = (props) => {
   const [quantity, setQuantidade] = useState(1);
-  const [heartColor, setHeartColor] = useState("")
+  const [heartColor, setHeartColor] = useState("rgba(229,234,212,0.6306897759103641)")
   const plusOne = () => {
     setQuantidade(Number(quantity) + 1);
   };
@@ -29,7 +29,7 @@ const Card = (props) => {
     for (let item of props.cart) {
       if (item.id === props.Dados.id) {
         item.quantity += quantity;
-        console.log(props.cart);
+        props.cartItems();
         return;
       }
     }
@@ -41,8 +41,9 @@ const Card = (props) => {
         quantity: quantity,
       },
     ];
+    props.cartItems();
     props.setCart(aux);
-    console.log(props.cart);
+    console.log(props.cart)
   };
   const onChageQuantity = (event) => {
     if (event.target.value < 0) {
@@ -52,11 +53,13 @@ const Card = (props) => {
     }
   };
   const changeColor = () => {
+    
     if(heartColor === "rgba(229,234,212,0.6306897759103641)"){
-        //setFav
         setHeartColor("red")
+        console.log(heartColor)
     }else{
         setHeartColor("rgba(229,234,212,0.6306897759103641)")  
+        console.log(heartColor)
     }
   }
   return (
@@ -76,7 +79,7 @@ const Card = (props) => {
         </SvgHeart>
       </ButtonHeart>
       <Div>
-        <Value>R${props.Dados.value}</Value>
+        <Value>{props.Dados.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</Value>
         <div>
           <ButtonAmount onClick={minusOne}>-</ButtonAmount>
           <Input value={quantity} onChange={onChageQuantity}></Input>

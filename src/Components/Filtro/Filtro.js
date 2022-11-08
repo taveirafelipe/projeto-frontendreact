@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "./style";
+import { Container, Button, Input } from "./style";
 
 const Header = (props) => {
   const handleName = (event) => {
@@ -16,7 +16,7 @@ const Header = (props) => {
       <h3>Filtro:</h3>
       <div>
         <label>Nome:</label>
-        <input
+        <Input
           type="text"
           placeholder="Nome"
           value={props.searchName}
@@ -26,14 +26,14 @@ const Header = (props) => {
       <div>
         <label>Preço:</label>
         <p>Mínimo:</p>
-        <input
+        <Input
           type="number"
           placeholder="Valor mínimo"
           value={props.minValue}
           onChange={handleMinValue}
         />
         <p>Máximo:</p>
-        <input
+        <Input
           type="text"
           placeholder="Valor máximo"
           value={props.maxValue}
