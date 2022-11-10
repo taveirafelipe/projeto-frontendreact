@@ -15,6 +15,7 @@ const GlobalStyled = createGlobalStyle`
   }
 `;
 function App() {
+  const [searchName, setSearchName] = useState("");
   const [page, setPage] = useState(2);
   const [cart, setCart] = useState([]);
   const [name, setName] = useState("Felipe");
@@ -22,6 +23,11 @@ function App() {
   const home = () => setPage(1);
   const items = () => setPage(2);
   const cartPage = () => setPage(3);
+
+  const removeCart = (item) => {
+    const filteredCart = cart.filter((items) => items !== item);
+    setCart(filteredCart)
+  };
 
   switch (page) {
     case 1:
@@ -42,6 +48,8 @@ function App() {
         <MainContainer>
           <GlobalStyled />
           <BuyPage 
+          searchName={searchName}
+          setSearchName={setSearchName}
           cart={cart}
           setCart={setCart}
           home={home}
@@ -56,12 +64,15 @@ function App() {
         <MainContainer>
           <GlobalStyled />
           <Cart
+          searchName={searchName}
+          setSearchName={setSearchName}
           cart={cart}
           setCart={setCart}
           home={home}
           items={items}
           cartPage={cartPage}
           name={name}
+          removeCart={removeCart}
           />
         </MainContainer>
       );

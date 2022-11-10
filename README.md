@@ -1,4 +1,5 @@
 https://www.flaticon.com/br/packs/e-commerce-213
+https://pt.wikipedia.org/wiki/Lista_de_foguetes
 
 Plaeta de cores:
 Color 1: #1f0z1d;

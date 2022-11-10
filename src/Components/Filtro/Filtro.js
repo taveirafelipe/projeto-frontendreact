@@ -1,10 +1,7 @@
 import React from "react";
-import { Container, Button, Input } from "./style";
+import { Container, Button, Input, Select } from "./style";
 
 const Header = (props) => {
-  const handleName = (event) => {
-    props.setSearchName(event.target.value);
-  };
   const handleMinValue = (event) => {
     props.setMinValue(event.target.value);
   };
@@ -15,38 +12,38 @@ const Header = (props) => {
     <Container>
       <h3>Filtro:</h3>
       <div>
-        <label>Nome:</label>
-        <Input
-          type="text"
-          placeholder="Nome"
-          value={props.searchName}
-          onChange={handleName}
-        />
+        <div>
+          <label>Valor mínimo:</label>
+          <p>{props.minValue}</p>
+          <Input
+            type="range"
+            min="0"
+            max={props.higherValue}
+            step="100"
+            value={props.minValue}
+            onChange={handleMinValue}
+          />
+        </div>
+        <div>
+          <label>Valor máximo:</label>
+          <p>{props.maxValue}</p>
+          <Input
+            type="range"
+            min="0"
+            max={props.higherValue}
+            step="100"
+            value={props.maxValue}
+            onChange={handleMaxValue}
+          />
+        </div>
       </div>
       <div>
-        <label>Preço:</label>
-        <p>Mínimo:</p>
-        <Input
-          type="number"
-          placeholder="Valor mínimo"
-          value={props.minValue}
-          onChange={handleMinValue}
-        />
-        <p>Máximo:</p>
-        <Input
-          type="text"
-          placeholder="Valor máximo"
-          value={props.maxValue}
-          onChange={handleMaxValue}
-        />
-      </div>
-      <div>
-        <label>Ordenar: </label>
-        <select>
-          <option value="cre"></option>
-          <option value="cre">Crescente</option>
-          <option value="dec">Decrescente</option>
-        </select>
+        <label>Ordenar valor: </label>
+        <Select value={props.order} onChange={event => props.setOrder(event.target.value)}>
+          <option value=""></option>
+          <option value="increasing">Crescente</option>
+          <option value="decreasing">Decrescente</option>
+        </Select>
       </div>
       <Button onClick={props.cleanSearch}>Limpar filtro</Button>
     </Container>
