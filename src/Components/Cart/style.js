@@ -9,12 +9,13 @@ export const MainContainer = styled.main`
 //HEADER
 export const Beggining  = styled.div`
   height: 2.5vh;
+  min-height: 22px;
   background: #e5ead4;
   text-align: end;
-
 `
 export const Header = styled.header`
   height: 6.5vh;
+  min-height: 60px;
   text-align: center;
   background-color: #334f53;
 `
@@ -62,6 +63,7 @@ export const Name = styled.h5`
   align-self: center;
   padding-left: 5%;
   color: white;
+  width: 150px;
 `
 export const ButtonImg = styled.button`
   width: 60px;
@@ -83,6 +85,14 @@ export const Image = styled.img`
   height: 30px;
   jutify-self: center;
   align-items: center;
+`
+export const SvgSearch = styled.svg`
+  width: 60px;
+  height: 30px;
+
+  &:hover path{
+    fill: #e5ead4;
+  }
 `
 //MAIN
 export const Container = styled.div`
@@ -113,8 +123,9 @@ export const Title = styled.h1`
 //NAVE
 export const Nav = styled.nav`
   display: flex;
-  background-color:#e5ead4;
+  background-color: #e5ead4;
   height: 3vh;
+  min-height: 27px;
   align-items: center;
   padding-left: 45px;
 `
@@ -135,15 +146,14 @@ export const ButtonMenu = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
-  
 
-  &:hover{
-    color:black;
-  }
+  // &:hover{
+  //   color:black;
+  // }
 
-  &:active{
-    background-color: blue;
-    color: white;
+  // &:active{
+  //   background-color: blue;
+  //   color: white;
   }
 `
 export const Menu = styled.img`
