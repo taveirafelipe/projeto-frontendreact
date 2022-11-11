@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import Dados from "../Dados/Dados.json";
 import cartButton from "../../Img/Carrinho-de-Compras.png";
 import Filtro from "../Filtro/Filtro";
@@ -30,13 +30,13 @@ import {
   Text,
   ButtonCart,
   Footer,
-  SvgSearch
+  SvgSearch,
 } from "./style";
 
 const BuyPage = (props) => {
   //Filtro
-  const higherValue = Dados.reduce(function(prev, current) {
-    return (prev.value > current.value) ? prev : current
+  const higherValue = Dados.reduce(function (prev, current) {
+    return prev.value > current.value ? prev : current;
   });
   const [name, setName] = useState("");
   const [minValue, setMinValue] = useState(0);
@@ -46,9 +46,9 @@ const BuyPage = (props) => {
   const cleanSearch = () => {
     props.setSearchName("");
     setMinValue(0);
-    console.log(higherValue)
+    console.log(higherValue);
     setMaxValue(higherValue.value);
-    setOrder("")
+    setOrder("");
   };
   const handleName = (event) => {
     setName(event.target.value);
@@ -69,7 +69,9 @@ const BuyPage = (props) => {
   };
 
   //Paginação
-  const [offSet, setOffSet] = useState(0);
+  const max_items = 11;
+  const pages = Math.ceil(Dados.length / max_items);
+  const [page, setPage] = useState(2);
 
   return (
     <>
@@ -189,50 +191,50 @@ const BuyPage = (props) => {
           cleanSearch={cleanSearch}
           higherValue={higherValue.value}
         />
-        <ContainerCard>
-          {Dados.filter((item) => {
-            return item.name
-              .toLocaleLowerCase()
-              .includes(props.searchName.toLocaleLowerCase());
-          })
-            .filter((item) => {
-              return item.value >= minValue;
+        <div>
+          <ContainerCard>
+            {Dados.filter((item) => {
+              return item.name
+                .toLocaleLowerCase()
+                .includes(props.searchName.toLocaleLowerCase());
             })
-            .filter((item) => {
-              return item.value <= maxValue;
-            })
-            .sort((a, b) => {
-              if (order === "increasing") return (a.value - b.value);
+              .filter((item) => {
+                return item.value >= minValue;
+              })
+              .filter((item) => {
+                return item.value <= maxValue;
+              })
+              .sort((a, b) => {
+                if (order === "increasing") return a.value - b.value;
 
-              if (order === "decreasing") return (b.value - a.value);
+                if (order === "decreasing") return b.value - a.value;
 
-              return 0;
-            })
-            .map((item) => {
-              return (
-                <Card
-                  cart={props.cart}
-                  setCart={props.setCart}
-                  key={item.id}
-                  Dados={item}
-                  cartItems={cartItems}
-                />
-              );
-            })}
-        </ContainerCard>
+                return 0;
+              })
+              .filter((_, index) => {
+                return (
+                  index >= (page - 1) * max_items && index <= page * max_items
+                );
+              })
+              .map((item) => {
+                return (
+                  <Card
+                    cart={props.cart}
+                    setCart={props.setCart}
+                    key={item.id}
+                    Dados={item}
+                    cartItems={cartItems}
+                  />
+                );
+              })}
+          </ContainerCard>
+          <Pagination total={pages} page={page} setPage={setPage} />
+        </div>
       </Container>
 
       <Footer>
         <p>Oi eu sou o Footer!</p>
       </Footer>
-      {/* <div>
-        <Pagination 
-          limit={10}
-          total={30}
-          offSet={offSet}
-          setOffSet={setOffSet}
-        />
-      </div> */}
     </>
   );
 };

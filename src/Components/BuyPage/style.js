@@ -117,13 +117,14 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   height: fit-content;
-  max-width: 1270px;
+  max-width: 1100px;
   width: 100%;
 `
 export const ContainerCard = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-width: 1270px;
   height: fit-content;
   padding: 20px;
   gap: 10px;

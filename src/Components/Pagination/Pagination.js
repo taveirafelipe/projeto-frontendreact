@@ -1,27 +1,34 @@
 import React from "react";
+import { Ul, Li, Button } from "./style";
 
-const max_items = 9;
+const max_items = 3;
 const mas_left = (max_items - 1) / 2;
 
-const Pagination = ({ limit, total, offSet, setOffSet }) => {
-  const current = offSet ? offSet / limit + 1 : 1;
-  const pages = Math.ceil(total / limit);
-  const first = Math.max(current - mas_left, 1);
+const Pagination = ({total, page, setPage}) => {
+
+const first = () => { 
+  let num = Math.max(page - mas_left, 1);
+    if (page >= total){
+      return page-2;
+    }else if (page < total){
+      return num ;
+    }
+  };
 
   return (
-    <div>
-      <ul>
+    <>
+      <Ul>
         {Array.from({ length: max_items })
-          .map((_, index) => index + first)
+          .map((_, index) => index + first())
           .map((page) => (
-            <li>
-              <button onClick={() => setOffSet((page - 1) * limit)}>
+            <Li>
+              <Button onClick={() => setPage(page)}>
                 {page}
-              </button>
-            </li>
+              </Button>
+            </Li>
           ))}
-      </ul>
-    </div>
+      </Ul>
+    </>
   );
 };
 

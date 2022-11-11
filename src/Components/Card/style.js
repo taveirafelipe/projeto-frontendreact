@@ -12,7 +12,7 @@ export const Container = styled.div`
     border: 1px solid #e5ead4;
     text-align: center;
     justify-content: center;
-    // box-shadow: 2px 2px 5px grey;
+    
 `
 export const Title = styled.h2`
     padding: 3% 0 3% 0;
