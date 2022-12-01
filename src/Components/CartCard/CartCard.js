@@ -21,8 +21,8 @@ const CartCard = (props) => {
   //   setQuantidade(Number(props.Dados.quantity) + 1);
   // };
   // const minusOne = () => {
-  //   if (props.Dados.quantity > 0) {
-  //     Number(props.Dados.quantity) -= 1;
+  //   if (quantity > 0) {
+  //     setQuantidade(Number(props.Dados.quantity) - 1);
   //   }
   // };
   return (
@@ -59,7 +59,7 @@ const CartCard = (props) => {
         </DivCol>
       </DivValue>
       <div>
-        <a href="https://www.netshoes.com.br/">Ver mais produtos</a>
+        <a href="">Ver mais produtos</a>
       </div>
     </Container>
   );

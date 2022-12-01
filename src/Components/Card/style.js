@@ -10,6 +10,7 @@ export const Container = styled.div`
     height: 500px;
     border-radius: 20px 20px 0px 0px;
     border: 1px solid #e5ead4;
+    align-items: stretch;
     text-align: center;
     justify-content: center;
     

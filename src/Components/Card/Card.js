@@ -17,6 +17,7 @@ import Dados from "../Dados/Dados.json";
 const Card = (props) => {
   const [quantity, setQuantidade] = useState(1);
   const [heartColor, setHeartColor] = useState("rgba(229,234,212,0.6306897759103641)")
+  
   const plusOne = () => {
     setQuantidade(Number(quantity) + 1);
   };
@@ -26,10 +27,15 @@ const Card = (props) => {
     }
   };
   const addCart = () => {
+    props.setChange(props.change + 1);
     for (let item of props.cart) {
       if (item.id === props.Dados.id) {
         item.quantity += quantity;
         props.cartItems();
+        
+        localStorage.clear()
+        localStorage.setItem('cart', JSON.stringify(props.cart))
+        
         return;
       }
     }
@@ -41,9 +47,10 @@ const Card = (props) => {
         quantity: quantity,
       },
     ];
-    props.cartItems();
     props.setCart(aux);
-    console.log(props.cart)
+    
+    localStorage.clear()
+    localStorage.setItem('cart', JSON.stringify(aux))
   };
   const onChageQuantity = (event) => {
     if (event.target.value < 0) {
@@ -56,10 +63,10 @@ const Card = (props) => {
     
     if(heartColor === "rgba(229,234,212,0.6306897759103641)"){
         setHeartColor("red")
-        console.log(heartColor)
+        // console.log(heartColor)
     }else{
         setHeartColor("rgba(229,234,212,0.6306897759103641)")  
-        console.log(heartColor)
+        // console.log(heartColor)
     }
   }
   return (
@@ -81,11 +88,11 @@ const Card = (props) => {
       <Div>
         <Value>{props.Dados.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</Value>
         <div>
-          <ButtonAmount onClick={minusOne}>-</ButtonAmount>
+          <ButtonAmount onClick={() => minusOne()}>-</ButtonAmount>
           <Input value={quantity} onChange={onChageQuantity}></Input>
-          <ButtonAmount onClick={plusOne}>+</ButtonAmount>
+          <ButtonAmount onClick={() => plusOne()}>+</ButtonAmount>
         </div>
-        <ButtonBuy onClick={addCart}>Comprar</ButtonBuy>
+        <ButtonBuy onClick={() => addCart()}>Comprar</ButtonBuy>
       </Div>
     </Container>
   );

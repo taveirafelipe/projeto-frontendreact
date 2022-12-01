@@ -1,77 +1,42 @@
-import { React, useState } from "react";
-import Dados from "../Dados/Dados.json";
-import cartButton from "../../Img/Carrinho-de-Compras.png";
-import Filtro from "../Filtro/Filtro";
-import Card from "../Card/Card";
+import { useState } from "react";
+import searchButton from "../../Img/Default.png";
 import rocketStore from "../../Img/rocket-store.png";
-import heart from "../../Img/coracao.png";
-import Pagination from "../Pagination/Pagination";
+import CartCard from "../../Components/CartCard/CartCard";
+import CardSummary from "../../Components/CardSummary/CardSummary";
 import {
   Container,
-  ContainerCard,
   Header,
   ButtonSearch,
-  ButtonImg,
   Input,
   Div,
   Divv,
   Image,
-  ButtonMenu,
-  Strong,
-  Menu,
   Beggining,
   Logo,
   Name,
+  BlankSpace,
+  Cart,
+  Summary,
+  Title,
   Nav,
   ButtonImg2,
   Svg,
-  ImageCart,
-  SvgCart,
-  Text,
-  ButtonCart,
-  Footer,
+  ButtonMenu,
+  Strong,
   SvgSearch,
 } from "./style";
+import { Footer } from "../../Components/Footer/Footer";
 
-const BuyPage = (props) => {
-  //Filtro
-  const higherValue = Dados.reduce(function (prev, current) {
-    return prev.value > current.value ? prev : current;
-  });
+const CartPage = (props) => {
   const [name, setName] = useState("");
-  const [minValue, setMinValue] = useState(0);
-  const [maxValue, setMaxValue] = useState(higherValue.value);
-  const [order, setOrder] = useState("");
 
-  const cleanSearch = () => {
-    props.setSearchName("");
-    setMinValue(0);
-    console.log(higherValue);
-    setMaxValue(higherValue.value);
-    setOrder("");
-  };
   const handleName = (event) => {
     setName(event.target.value);
   };
   const onClickName = () => {
     props.setSearchName(name);
+    props.items();
   };
-
-  //Quantidade carinho
-  const [quantItems, setQuantItems] = useState(1);
-  const [fill1, setFill1] = useState("transparent");
-  const [fill2, setFill2] = useState("transparent");
-  const cartItems = () => {
-    //Falta passar a quantidade de itens.
-
-    setFill1("red");
-    setFill2("white");
-  };
-
-  //Paginação
-  const max_items = 11;
-  const pages = Math.ceil(Dados.length / max_items);
-  const [page, setPage] = useState(2);
 
   return (
     <>
@@ -80,7 +45,7 @@ const BuyPage = (props) => {
       <Header>
         <Divv>
           <div>
-            <a href="https://www.netshoes.com.br/">
+            <a href="">
               <Logo src={rocketStore}></Logo>
             </a>
           </div>
@@ -128,22 +93,8 @@ const BuyPage = (props) => {
           <Divv>
             <Div>
               <Div>
-                <Name>OLÁ, {props.name.toLocaleUpperCase()}!</Name>
+                <Name>OLÁ, {props.clientName.toLocaleUpperCase()}!</Name>
               </Div>
-              <ButtonImg>
-                <Image src={heart} alt="Favoritos"></Image>
-              </ButtonImg>
-              <ButtonCart onClick={() => props.cartPage()}>
-                <div>
-                  <ImageCart src={cartButton}></ImageCart>
-                  <SvgCart height="15" width="15">
-                    <circle cx="7.5" cy="7.5" r="7.5" fill={fill1} />
-                    <Text x="3" y="12" fill={fill2}>
-                      {quantItems}
-                    </Text>
-                  </SvgCart>
-                </div>
-              </ButtonCart>
             </Div>
           </Divv>
         </Divv>
@@ -170,7 +121,7 @@ const BuyPage = (props) => {
             />{" "}
           </Svg>
         </ButtonImg2>
-        <ButtonMenu>
+        <ButtonMenu onClick={() => props.items()}>
           <Svg viewBox="0 -10 100 80" width="25" height="25">
             <rect width="100" height="15"></rect>
             <rect y="30" width="100" height="15"></rect>
@@ -181,62 +132,31 @@ const BuyPage = (props) => {
       </Nav>
 
       <Container>
-        <Filtro
-          minValue={minValue}
-          setMinValue={setMinValue}
-          maxValue={maxValue}
-          setMaxValue={setMaxValue}
-          order={order}
-          setOrder={setOrder}
-          cleanSearch={cleanSearch}
-          higherValue={higherValue.value}
-        />
-        <div>
-          <ContainerCard>
-            {Dados.filter((item) => {
-              return item.name
-                .toLocaleLowerCase()
-                .includes(props.searchName.toLocaleLowerCase());
-            })
-              .filter((item) => {
-                return item.value >= minValue;
-              })
-              .filter((item) => {
-                return item.value <= maxValue;
-              })
-              .sort((a, b) => {
-                if (order === "increasing") return a.value - b.value;
-
-                if (order === "decreasing") return b.value - a.value;
-
-                return 0;
-              })
-              .filter((_, index) => {
-                return (
-                  index >= (page - 1) * max_items && index <= page * max_items
-                );
-              })
-              .map((item) => {
-                return (
-                  <Card
-                    cart={props.cart}
-                    setCart={props.setCart}
-                    key={item.id}
-                    Dados={item}
-                    cartItems={cartItems}
-                  />
-                );
-              })}
-          </ContainerCard>
-          <Pagination total={pages} page={page} setPage={setPage} />
-        </div>
+        <BlankSpace></BlankSpace>
+        <Cart>
+          <Title>Meu carrinho</Title>
+          {props.cart.map((item) => {
+            return <CartCard 
+            cart={props.cart} 
+            key={item.id} 
+            Dados={item} 
+            removeCart={props.removeCart}
+            />;
+          })}
+        </Cart>
+        <Summary>
+          <Title>Resumo de compra</Title>
+          <CardSummary 
+          cart={props.cart}
+          
+          />
+        </Summary>
+        <BlankSpace></BlankSpace>
       </Container>
 
-      <Footer>
-        <p>Oi eu sou o Footer!</p>
-      </Footer>
+      <Footer/>
     </>
   );
 };
 
-export default BuyPage;
+export default CartPage;
