@@ -1,10 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import { MainContainer } from "./app-style";
 import { useState } from "react";
-import Home from "./Components/Home/Home";
-import BuyPage from "./Components/BuyPage/BuyPage";
-import Cart from "./Components/Cart/Cart"
-
+import Home from "./Pages/HomePage/HomePage";
+import BuyPage from "./Pages/BuyPage/BuyPage";
+import Cart from "./Pages/CartPage/CartPage";
+import { useEffect } from "react";
 
 const GlobalStyled = createGlobalStyle`
   *{
@@ -16,18 +16,50 @@ const GlobalStyled = createGlobalStyle`
 `;
 function App() {
   const [searchName, setSearchName] = useState("");
+  const [name, setName] = useState("");
   const [page, setPage] = useState(2);
-  const [cart, setCart] = useState([]);
-  const [name, setName] = useState("Felipe");
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
+  const [clientName, setClientName] = useState("Felipe");
+  const [change, setChange] = useState(0)
+  const [counter, setCounter] = useState(null);
+  const [fill1, setFill1] = useState("transparent");
+  const [fill2, setFill2] = useState("transparent");
 
-  const home = () => setPage(1);
-  const items = () => setPage(2);
+  const home = () => {
+    setPage(1);
+    // if(cart !== ""){
+    // localStorage.setItem('cart', JSON.stringify(cart));
+    // };
+
+  };
+  const items = () => {
+    setPage(2)
+  };
   const cartPage = () => setPage(3);
 
   const removeCart = (item) => {
     const filteredCart = cart.filter((items) => items !== item);
-    setCart(filteredCart)
+    setCart(filteredCart);
+    setChange(quantityCart()-item.quantity);
+    
+    localStorage.clear()
+    localStorage.setItem('cart', JSON.stringify(filteredCart))
   };
+
+  const quantityCart = () => {
+    let itens = 0;
+    for(let item of cart){
+      itens += item.quantity;
+    };
+    return itens;
+  };
+
+  useEffect(() => {
+    setCounter(quantityCart());
+  }, []);
+  useEffect(() => {
+    setCounter(quantityCart());
+  }, [change]);
 
   switch (page) {
     case 1:
@@ -40,6 +72,17 @@ function App() {
           home={home}
           items={items}
           cartPage={cartPage}
+          counter={counter}
+          setCounter={setCounter}
+          fill1={fill1}
+          setFill1={setFill1}
+          fill2={fill2}
+          setFill2={setFill2}
+          name={name}
+          setName={setName}
+          clientName={clientName}
+          searchName={searchName}
+          setSearchName={setSearchName}
           />
         </MainContainer>
       );
@@ -55,7 +98,17 @@ function App() {
           home={home}
           items={items}
           cartPage={cartPage}
+          clientName={clientName}
+          counter={counter}
+          setCounter={setCounter}
+          change={change}
+          setChange={setChange}
+          fill1={fill1}
+          setFill1={setFill1}
+          fill2={fill2}
+          setFill2={setFill2}
           name={name}
+          setName={setName}
           />
         </MainContainer>
       );
@@ -71,7 +124,17 @@ function App() {
           home={home}
           items={items}
           cartPage={cartPage}
+          clientName={clientName}
+          counter={counter}
+          setCounter={setCounter}
+          change={change}
+          setChange={setChange}
+          fill1={fill1}
+          setFill1={setFill1}
+          fill2={fill2}
+          setFill2={setFill2}
           name={name}
+          setName={setName}
           removeCart={removeCart}
           />
         </MainContainer>
@@ -83,6 +146,19 @@ function App() {
           cart={cart}
           setCart={setCart}
           home={home}
+          items={items}
+          cartPage={cartPage}
+          counter={counter}
+          setCounter={setCounter}
+          fill1={fill1}
+          setFill1={setFill1}
+          fill2={fill2}
+          setFill2={setFill2}
+          name={name}
+          setName={setName}
+          clientName={clientName}
+          searchName={searchName}
+          setSearchName={setSearchName}
           />
         </MainContainer>
   }

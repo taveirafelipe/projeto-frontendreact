@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Button, Input, Select } from "./style";
 
-const Header = (props) => {
+const Filtro = (props) => {
   const handleMinValue = (event) => {
     props.setMinValue(event.target.value);
   };
@@ -50,4 +50,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Filtro;

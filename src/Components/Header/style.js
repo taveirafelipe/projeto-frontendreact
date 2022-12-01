@@ -7,7 +7,7 @@ export const Beggining  = styled.div`
   background: #e5ead4;
   text-align: end;
 `
-export const Header = styled.header`
+export const HeaderDiv = styled.header`
   height: 6.5vh;
   min-height: 60px;
   text-align: center;
@@ -110,82 +110,4 @@ export const SvgSearch = styled.svg`
   &:hover path{
     fill: #e5ead4;
   }
-`
-//MAIN
-export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: fit-content;
-  max-width: 1100px;
-  width: 100%;
-`
-export const ContainerCard = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1270px;
-  height: fit-content;
-  padding: 20px;
-  gap: 10px;
-  flex-wrap: wrap;
-  
-`
-//NAV
-export const Nav = styled.nav`
-  display: flex;
-  background-color: #e5ead4;
-  height: 3vh;
-  min-height: 27px;
-  align-items: center;
-  padding-left: 45px;
-`
-export const ButtonImg2 = styled.button`
-  width: 60px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-`
-export const ButtonMenu = styled.button`
-  width: 200px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  color: black;
-  margin: 0 0 0 50px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-
-  // &:hover{
-  //   color:black;
-  // }
-
-  // &:active{
-  //   background-color: blue;
-  //   color: white;
-  }
-`
-export const Menu = styled.img`
-  height: 20px;
-  align-self: center;
-
-`
-export const Strong = styled.p`
-  align-self: center;
-  font-size: 16px;
-  color: #334f53;
-  padding: 10%;
-`
-export const Svg = styled.svg`
-  fill: #334f53;
-  stroke-width: 1px;
-`
-//Footer
-export const Footer = styled.footer`
-  // height: 100px;
-  background: #334f53;
-  position: static;
-  bottom: 0px;
 `

@@ -9,8 +9,8 @@ export const Container = styled.nav`
     position: sticky;
     top: 200px;
     // border: 1px solid #000;
-    // min-width: 170px;
-    // max-width: 210px;
+    min-width: 170px;
+    max-width: 210px;
 `
 export const Button = styled.button`
     height: 30px;
