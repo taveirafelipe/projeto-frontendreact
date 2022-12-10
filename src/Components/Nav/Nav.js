@@ -10,8 +10,7 @@ export const Nav = ({home, items}) => {
   return (
     <>
       <Navigation>
-        <ButtonImg2 onClick={() => home()}>
-          {/* <Image src={homeButton}></Image> */}
+        {/* <ButtonImg2 onClick={() => home()}>
           <Svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -29,7 +28,7 @@ export const Nav = ({home, items}) => {
               stroke="#334f53"
             />{" "}
           </Svg>
-        </ButtonImg2>
+        </ButtonImg2> */}
         <ButtonMenu onClick={() => items()}>
           <Svg viewBox="0 -10 100 80" width="25" height="25">
             <rect width="100" height="15"></rect>

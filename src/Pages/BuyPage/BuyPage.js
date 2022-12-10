@@ -89,11 +89,11 @@ const BuyPage = (props) => {
 
                 return 0;
               })
-              .filter((_, index) => {
-                return (
-                  index >= (page - 1) * max_items && index <= page * max_items
-                );
-              })
+              // .filter((_, index) => {
+              //   return (
+              //     index >= (page - 1) * max_items && index <= page * max_items
+              //   );
+              // })
               .map((item) => {
                 return (
                   <Card
@@ -108,7 +108,7 @@ const BuyPage = (props) => {
                 );
               })}
           </ContainerCard>
-          <Pagination total={pages} page={page} setPage={setPage} />
+          {/* <Pagination total={pages} page={page} setPage={setPage} /> */}
         </Division>
       </Container>
 

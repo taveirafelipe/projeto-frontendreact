@@ -17,14 +17,7 @@ import {
 } from "./style";
 
 const CartCard = (props) => {
-  // const plusOne = () => {
-  //   setQuantidade(Number(props.Dados.quantity) + 1);
-  // };
-  // const minusOne = () => {
-  //   if (quantity > 0) {
-  //     setQuantidade(Number(props.Dados.quantity) - 1);
-  //   }
-  // };
+
   return (
     <Container>
       <DivRow1>
@@ -48,14 +41,13 @@ const CartCard = (props) => {
         <DivRow>
           <h3>Quantidade:</h3>
           <div>
-            <ButtonAmount >-</ButtonAmount>
+            {/* <ButtonAmount >-</ButtonAmount> */}
             <Input value={props.Dados.quantity} ></Input>
-            <ButtonAmount >+</ButtonAmount>
+            {/* <ButtonAmount >+</ButtonAmount> */}
           </div>
         </DivRow>
         <DivCol>
           <h3>{props.Dados.item.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</h3>
-          {/* <h4>ou R$ {props.Dados.item.value * 0.97} no PIX</h4> */}
         </DivCol>
       </DivValue>
       <div>
