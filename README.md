@@ -1,12 +1,4 @@
-https://www.flaticon.com/br/packs/e-commerce-213
-https://pt.wikipedia.org/wiki/Lista_de_foguetes
-
-Paleta de cores:
-- Color 1: #1f0z1d;
-- Color 2: #334f53;
-- Color 3: #45936c;
-- Color 4: #9acc77;
-- Color 5: #e5ead4;
+Dados: https://pt.wikipedia.org/wiki/Lista_de_foguetes
 
 # projeto-frontendreact
 
