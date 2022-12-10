@@ -39,9 +39,7 @@ const BuyPage = (props) => {
   //Paginação
   const max_items = 11;
   const pages = Math.ceil(Dados.length / max_items);
-  const [page, setPage] = useState(1);
-
-  
+  const [page, setPage] = useState(1);  
 
   return (
     <>

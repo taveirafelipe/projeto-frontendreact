@@ -18,19 +18,15 @@ function App() {
   const [searchName, setSearchName] = useState("");
   const [name, setName] = useState("");
   const [page, setPage] = useState(2);
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')));
+  const [cart, setCart] = useState([]);
   const [clientName, setClientName] = useState("Felipe");
   const [change, setChange] = useState(0)
-  const [counter, setCounter] = useState(null);
+  const [counter, setCounter] = useState(0);
   const [fill1, setFill1] = useState("transparent");
   const [fill2, setFill2] = useState("transparent");
 
   const home = () => {
     setPage(1);
-    // if(cart !== ""){
-    // localStorage.setItem('cart', JSON.stringify(cart));
-    // };
-
   };
   const items = () => {
     setPage(2)
@@ -48,13 +44,19 @@ function App() {
 
   const quantityCart = () => {
     let itens = 0;
-    for(let item of cart){
-      itens += item.quantity;
-    };
-    return itens;
+    if(!cart){
+      return 0;
+    }else{
+      for(let item of cart){
+        itens += item.quantity;
+      };
+      return itens;
+    }
+    
   };
 
   useEffect(() => {
+    setCart(JSON.parse(localStorage.getItem('cart')));
     setCounter(quantityCart());
   }, []);
   useEffect(() => {

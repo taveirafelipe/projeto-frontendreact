@@ -1,12 +1,11 @@
 import { useState } from "react";
-import Dados from "../Dados/Dados.json";
 import { Container, DivSide, Div, Input, Button, ButtonFinal, P, H3 } from "./style";
 
 const CardSummary = (props) => {
     const [frete, setFrete] = useState(1000); 
     const [cupom, setCupom] = useState("")
     const [desconto, setDesconto] = useState(0)
-    // const cupons = ["rocket10", "rocket5", "blackfriday15"]
+    
     let itens = 0;
     let subtotal = 0;
     for(let item of props.cart){

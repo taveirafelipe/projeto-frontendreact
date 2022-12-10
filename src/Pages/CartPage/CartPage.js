@@ -101,15 +101,15 @@ const CartPage = (props) => {
         <BlankSpace></BlankSpace>
         <Cart>
           <Title>Meu carrinho</Title>
-          {(props.cart.length === 0) ? (
+          {/* {(props.cart) ? (
             <div>
               <br/>
               <h2>Seu carrinho está vazio...</h2>
               <p>Que tal aproveitar nossas ofertas especiais?</p>
                <a href="">Clique aqui e confira</a>
             </div>
-          ):(
-            props.cart.map((item) => {
+          ):( */}
+            {(props.cart.map((item) => {
               return (
                 <CartCard
                   cart={props.cart}

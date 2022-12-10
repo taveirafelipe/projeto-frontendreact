@@ -15,9 +15,12 @@ import {
 import Dados from "../Dados/Dados.json";
 
 const Card = (props) => {
+  const [counter, setCounter] = useState(0);
   const [quantity, setQuantidade] = useState(1);
-  const [heartColor, setHeartColor] = useState("rgba(229,234,212,0.6306897759103641)")
-  
+  const [heartColor, setHeartColor] = useState(
+    "rgba(229,234,212,0.6306897759103641)"
+  );
+
   const plusOne = () => {
     setQuantidade(Number(quantity) + 1);
   };
@@ -28,17 +31,20 @@ const Card = (props) => {
   };
   const addCart = () => {
     props.setChange(props.change + 1);
-    for (let item of props.cart) {
-      if (item.id === props.Dados.id) {
-        item.quantity += quantity;
-        props.cartItems();
-        
-        localStorage.clear()
-        localStorage.setItem('cart', JSON.stringify(props.cart))
-        
-        return;
+    if (counter !== 0) {
+      for (let item of props.cart) {
+        if (item.id === props.Dados.id) {
+          item.quantity += quantity;
+          props.cartItems();
+
+          localStorage.clear();
+          localStorage.setItem("cart", JSON.stringify(props.cart));
+
+          return;
+        }
       }
     }
+
     const aux = [
       ...props.cart,
       {
@@ -48,9 +54,10 @@ const Card = (props) => {
       },
     ];
     props.setCart(aux);
-    
-    localStorage.clear()
-    localStorage.setItem('cart', JSON.stringify(aux))
+    setCounter(counter + 1);
+
+    localStorage.clear();
+    localStorage.setItem("cart", JSON.stringify(aux));
   };
   const onChageQuantity = (event) => {
     if (event.target.value < 0) {
@@ -60,15 +67,14 @@ const Card = (props) => {
     }
   };
   const changeColor = () => {
-    
-    if(heartColor === "rgba(229,234,212,0.6306897759103641)"){
-        setHeartColor("red")
-        // console.log(heartColor)
-    }else{
-        setHeartColor("rgba(229,234,212,0.6306897759103641)")  
-        // console.log(heartColor)
+    if (heartColor === "rgba(229,234,212,0.6306897759103641)") {
+      setHeartColor("red");
+      // console.log(heartColor)
+    } else {
+      setHeartColor("rgba(229,234,212,0.6306897759103641)");
+      // console.log(heartColor)
     }
-  }
+  };
   return (
     <Container>
       <Title>{props.Dados.name}</Title>
@@ -76,7 +82,8 @@ const Card = (props) => {
         <Img src={props.Dados.imageUrl} />
       </Absolute>
       <ButtonHeart onClick={changeColor}>
-        <SvgHeart fill={heartColor}
+        <SvgHeart
+          fill={heartColor}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -86,7 +93,12 @@ const Card = (props) => {
         </SvgHeart>
       </ButtonHeart>
       <Div>
-        <Value>{props.Dados.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</Value>
+        <Value>
+          {props.Dados.value.toLocaleString("pt-br", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </Value>
         <div>
           <ButtonAmount onClick={() => minusOne()}>-</ButtonAmount>
           <Input value={quantity} onChange={onChageQuantity}></Input>
