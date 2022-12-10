@@ -62,30 +62,30 @@ function App() {
   }, [change]);
 
   switch (page) {
-    case 1:
-      return (
-        <MainContainer>
-          <GlobalStyled />
-          <Home 
-          cart={cart}
-          setCart={setCart}
-          home={home}
-          items={items}
-          cartPage={cartPage}
-          counter={counter}
-          setCounter={setCounter}
-          fill1={fill1}
-          setFill1={setFill1}
-          fill2={fill2}
-          setFill2={setFill2}
-          name={name}
-          setName={setName}
-          clientName={clientName}
-          searchName={searchName}
-          setSearchName={setSearchName}
-          />
-        </MainContainer>
-      );
+    // case 1:
+    //   return (
+    //     <MainContainer>
+    //       <GlobalStyled />
+    //       <Home 
+    //       cart={cart}
+    //       setCart={setCart}
+    //       home={home}
+    //       items={items}
+    //       cartPage={cartPage}
+    //       counter={counter}
+    //       setCounter={setCounter}
+    //       fill1={fill1}
+    //       setFill1={setFill1}
+    //       fill2={fill2}
+    //       setFill2={setFill2}
+    //       name={name}
+    //       setName={setName}
+    //       clientName={clientName}
+    //       searchName={searchName}
+    //       setSearchName={setSearchName}
+    //       />
+    //     </MainContainer>
+    //   );
     case 2:
       return (
         <MainContainer>
@@ -140,27 +140,31 @@ function App() {
         </MainContainer>
       );
     default:
-      <MainContainer>
+      return (
+        <MainContainer>
           <GlobalStyled />
-          <Home 
+          <BuyPage 
+          searchName={searchName}
+          setSearchName={setSearchName}
           cart={cart}
           setCart={setCart}
           home={home}
           items={items}
           cartPage={cartPage}
+          clientName={clientName}
           counter={counter}
           setCounter={setCounter}
+          change={change}
+          setChange={setChange}
           fill1={fill1}
           setFill1={setFill1}
           fill2={fill2}
           setFill2={setFill2}
           name={name}
           setName={setName}
-          clientName={clientName}
-          searchName={searchName}
-          setSearchName={setSearchName}
           />
         </MainContainer>
+      );
   }
 }
 

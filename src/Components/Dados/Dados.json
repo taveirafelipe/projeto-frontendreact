@@ -3,7 +3,7 @@
         "id": "0001",
         "name": "Athena I",
         "family": "Athena",
-        "value": 15000,
+        "value": 150000,
         "description": {
             "english": "The Athena I, known as the Lockheed Launch Vehicle (LLV) at the time of its first flight and Lockheed Martin Launch Vehicle (LMLV) at the time of its second flight.",
             "portuguese": "Athena I foi um foguete construído pela Lockheed Martin com capital privado e pertencente à família de foguetes Athena. Foi retirado do serviço por não obter os benefícios esperados."
@@ -14,7 +14,7 @@
         "id": "0002",
         "name": "Athena II",
         "family": "Athena",
-        "value": 12000.0,
+        "value": 120000.0,
         "description": {
             "english": "The Athena II is an American small expendable launch system which was used for three launches between 1998 and 1999,[1] and which was scheduled to return to service in 2012 but has not been flown again as of October 2022.",
             "portuguese": "O Athena II foi um foguete construído pela Lockheed Martin com capital privado e pertencente à família de foguetes Athena. Foi retirado do serviço por não obter os benefícios esperados."
@@ -25,7 +25,7 @@
         "id": "0003",
         "name": "Atlas B",
         "family": "Atlas",
-        "value": 13000.0,
+        "value": 130000.0,
         "description": {
             "english": "The SM-65 Atlas was the first operational intercontinental ballistic missile (ICBM) developed by the United States and the first member of the Atlas rocket family. It was built for the U.S. Air Force by the Convair Division of General Dynamics at an assembly plant located in Kearny Mesa, San Diego.",
             "portuguese": "O SM-65 Atlas foi o primeiro ICBM dos Estados Unidos. Foi desenvolvido pela General Dynamics (divisão Convair) para a Força Aérea dos Estados Unidos. Estes mísseis ficavam de prontidão em silos espalhados por todo o território Norte americano como arma de dissuasão, durante a Guerra fria."
@@ -36,7 +36,7 @@
         "id": "0004",
         "name": "Atlas Able",
         "family": "Atlas",
-        "value": 14000.0,
+        "value": 140000.0,
         "description": {
             "english": "The Atlas-Able was an American expendable launch system derived from the SM-65 Atlas missile. It was a member of the Atlas family of rockets, and was used to launch several Pioneer spacecraft towards the Moon. Of the five Atlas-Able rockets built, two failed during static firings, and the other three failed to reach orbit.",
             "portuguese": "O Atlas-Able, foi um veículo de lançamento descartável de origem Norte americana. Originalmente projetado e construido pela Divisão Convair da General Dynamics em San Diego, na Califórnia. Ele fazia parte da família Atlas de foguetes e foi criado a partir do míssil SM-65 Atlas. O Atlas-Able, foi usado para lançar as primeiras sondas do Programa Pioneer, sem muito sucesso."
@@ -47,7 +47,7 @@
         "id": "0005",
         "name": "Atlas Agena",
         "family": "Atlas",
-        "value": 22000.0,
+        "value": 220000.0,
         "description": {
             "english": "The Atlas-Agena was an American expendable launch system derived from the SM-65 Atlas missile. It was a member of the Atlas family of rockets, and was launched 109 times between 1960 and 1978.",
             "portuguese": "Originalmente projetado e construído pela Divisão Convair da General Dynamics em San Diego, na Califórnia. Os Atlas-Agena foram uma combinação de foguetes Atlas com diferentes versões do foguete Agena como segundo foguete, aumentando a carga útil que poderia ser posta em órbita. Nos Atlas-Agena empregaram todas as versões que houve de foguetes Agena."
@@ -58,7 +58,7 @@
         "id": "0006",
         "name": "Atlas H",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 370000.0,
         "description": {
             "english": "The Atlas H was an American expendable launch system derived from the SM-65 Atlas missile. It was a member of the Atlas family of rockets, and was used to launch five clusters of NOSS satellites for the US National Reconnaissance Office. ",
             "portuguese": "O Atlas H, foi um veículo de lançamento descartável de origem Norte americana. Originalmente projetado e construido pela Divisão Convair da General Dynamics em San Diego, na Califórnia. Ele fazia parte da família Atlas de foguetes e foi criado a partir do míssil SM-65 Atlas."
@@ -69,7 +69,7 @@
         "id": "0007",
         "name": "Atlas LV-3B",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 650000.0,
         "description": {
             "english": "he Atlas LV-3B, Atlas D Mercury Launch Vehicle or Mercury-Atlas Launch Vehicle, was a human-rated expendable launch system used as part of the United States Project Mercury to send astronauts into low Earth orbit.",
             "portuguese": "O Atlas LV-3B, ou Veículo de lançamento Atlas D-Mercury ou ainda Veículo de lançamento Mercury-Atlas, foi um veículo de lançamento descartável certificado para voos tripulados. Esse foguete, foi usado como parte do Programa Mercury, para voos suborbitais e orbitais tripulados."
@@ -80,7 +80,7 @@
         "id": "0008",
         "name": "Atlas SLV-3",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 310000.0,
         "description": {
             "english": "The Atlas SLV-3, or SLV-3 Atlas was an American expendable launch system derived from the SM-65 Atlas / SM-65D Atlas missile. It was a member of the Atlas family of rockets. The Atlas SLV-3 was a stage and a half rocket, built as a standardized replacement for earlier Atlas launch systems, which had been derived from the various Atlas missiles.",
             "portuguese": "O Atlas SLV-3, ou SLV-3 Atlas foi um sistema de lançamento descartável derivado do míssil SM-65 Atlas. Ele era um membro da família de foguetes Atlas, e foi usado por três testes suborbitais dos veículos de reentrada X-23 Prime. Dois lançamentos orbitais também foram realizadas, sendo que ambos falharam."
@@ -91,7 +91,7 @@
         "id": "0009",
         "name": "Atlas Centaur",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 520000.0,
         "description": {
             "english": "The Atlas-Centaur was a United States expendable launch vehicle derived from the SM-65 Atlas D missile. Launches were conducted from Launch Complex 36 at the Cape Canaveral Air Force Station (CCAFS) in Florida.",
             "portuguese": "O Atlas-Centaur, foi um veículo de lançamento descartável de origem Norte americana. Originalmente projetado e construído pela Divisão Convair da General Dynamics em San Diego, na Califórnia."
@@ -102,7 +102,7 @@
         "id": "0010",
         "name": "Atlas G",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 340000.0,
         "description": {
             "english": "The Atlas G, also known as Atlas G Centaur-D1AR[1] was an American expendable launch system derived from the Atlas-Centaur. It was a member of the Atlas family of rockets, and was used to launch seven communication satellites during the mid to late 1980s.",
             "portuguese": " Atlas G, foi um veículo de lançamento descartável de origem Norte americana. Originalmente projetado e construido pela Divisão Convair da General Dynamics em San Diego, na Califórnia."
@@ -113,7 +113,7 @@
         "id": "0011",
         "name": "Atlas I",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 590000.0,
         "description": {
             "english": "The Atlas I was a US expendable launch system manufactured by General Dynamics in the 1990s to launch a variety of satellites. In June 1987, General Dynamics committed $100M to acquire long-lead procurement items to support build of 18 vehicles for sale commercially.",
             "portuguese": "O Atlas I foi um Sistema de lançamento descartável de origem Norte Americana, usado na década de 90 para lançar uma grande variedade de satélites. O \"I\" no nome \"Atlas I\" pode causar um certa confusão, devido ao fato de todos os modelos Atlas anteriores usarem letras no sufixo do nome, sendo o último desses o Atlas H. No entanto, os foguetes seguintes foram identificados usando Algarismos Romanos, começando com o \"Atlas I\"."
@@ -124,7 +124,7 @@
         "id": "0012",
         "name": "Atlas II",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 120000.0,
         "description": {
             "english": "Atlas II was a member of the Atlas family of launch vehicles, which evolved from the successful Atlas missile program of the 1950s. The Atlas II was a direct evolution of the Atlas I, featuring longer first stage tanks, higher-performing engines, and the option for strap-on solid rocket boosters. It was designed to launch payloads into low earth orbit, geosynchronous transfer orbit or geosynchronous orbit. ",
             "portuguese": "O Atlas II, foi o último foguete da família Atlas a usar o esquema de três motores no primeiro estágio, sendo dois descartados durante o voo (um estágio e meio), os tanques e outros elementos estruturais foram mantidos. Ele foi projetado para colocar cargas úteis em órbita baixa, órbita de transferência geosíncrona ou simplesmente órbita geossíncrona."
@@ -135,7 +135,7 @@
         "id": "0013",
         "name": "Atlas III",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 340000.0,
         "description": {
             "english": "The Atlas III (known as the Atlas II-AR (R for Russian) early in development [3]) was an American orbital launch vehicle, used in the years between 2000 and 2005.[4] It was developed from the highly successful Atlas II rocket and shared many components.",
             "portuguese": "O Atlas III, foi um veículo de lançamento descartável de origem Norte americana. Originalmente projetado e construído pela Lockheed Martin em Bethesda, Maryland. Ele fazia parte da família Atlas de foguetes e foi criado usando uma concepção diferente dos modelos anteriores."
@@ -146,7 +146,7 @@
         "id": "0014",
         "name": "Atlas V",
         "family": "Atlas",
-        "value": 10000.0,
+        "value": 120000.0,
         "description": {
             "english": "Atlas V is an expendable launch system and the fifth major version in the Atlas launch vehicle family. It was originally designed by Lockheed Martin, now being operated by United Launch Alliance (ULA), a joint venture between Lockheed Martin and Boeing.",
             "portuguese": "O Atlas V é um veículo de lançamento descartável, ainda em atividade da família de foguetes Atlas. Ele foi operado primeiramente pela Lockheed Martin, e atualmente é operado pela joint venture Lockheed Martin-Boeing, a United Launch Alliance (ULA). Cada foguete Atlas V usa um motor RD-180 (movido a RP-1 e LOX), como primeiro estágio e um motor RL10 (movido a LH2 e LOX), no segundo estágio, um Centaur."
@@ -157,7 +157,7 @@
         "id": "0015",
         "name": "Antares 110",
         "family": "Antares",
-        "value": 10000.0,
+        "value": 540000.0,
         "description": {
             "english": "Antares (/ænˈtɑːriːz/), known during early development as Taurus II, is an expendable launch system developed by Orbital Sciences Corporation (now part of Northrop Grumman) and the Yuzhnoye Design Bureau to launch the Cygnus spacecraft to the International Space Station as part of NASA's COTS and CRS programs.",
             "portuguese": " foguete Antares, conhecido no início do desenvolvimento como Taurus II, é um veículo de lançamento descartável desenvolvido pela Orbital Sciences Corporation. Este veículo de lançamento é usado para lançar a nave não tripulada Cygnus que é usado para abastecer a Estação Espacial Internacional."
@@ -166,509 +166,168 @@
     },
     {
         "id": "0016",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Scout X",
+        "family": "Scout",
+        "value": 340000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "Scout X was an American expendable launch system and sounding rocket which was flown twice in 1962.",
+            "portuguese": "O Scout X, foi, ao mesmo tempo, um foguete de sondagem e também um veículo de lançamento descartável. Composto de quatro estágios, foi lançado apenas duas vezes em 1962."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Scout_X-2M_with_P35-1_%28FTV-3501%29_%28May_24%2C_1962%29.gif/250px-Scout_X-2M_with_P35-1_%28FTV-3501%29_%28May_24%2C_1962%29.gif"
     },
     {
         "id": "0017",
-        "name": "Foguete a",
-        "family": "",
-        "value": 10000.0,
+        "name": "Blue Scout I",
+        "family": "Scout",
+        "value": 540000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The RM-89 Blue Scout I was an American sounding rocket which was flown four times between January 1961 and April 1962. It was used for two HETS test flights, and a flight to investigate atmospheric re-entry. It was a member of the Scout family of rockets.",
+            "portuguese": "O Blue Scout I - XRM-89, é um foguete de sondagem da Força Aérea dos Estados Unidos. Ele fazia parte da família de foguetes Scout. O programa Blue Scout, era uma variante da Aeronáutica sobre o projeto do foguete Scout da NASA."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Blue_Scout.jpg/250px-Blue_Scout.jpg"
     },
     {
         "id": "0018",
-        "name": "Foguete x",
-        "family": "",
-        "value": 10000.0,
+        "name": "Blue Scout II",
+        "family": "Scout",
+        "value": 390000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The RM-90 Blue Scout II was an American sounding rocket and expendable launch system which was flown three times during 1961. It was used for two HETS test flights, and the launch of the Mercury-Scout 1 satellite for NASA. It was a member of the Scout family of rockets.",
+            "portuguese": "O Blue Scout II - RM-90 (designação da Ford Aeronutronics) XRM-90 (designação da aeronáutica),[1] é um foguete de sondagem da Força Aérea dos Estados Unidos. Ele fazia parte da família de foguetes Scout. O programa Blue Scout, era uma variante da Aeronáutica sobre o projeto do foguete Scout da NASA."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Blue_Scout_II_rocket-02.jpg/250px-Blue_Scout_II_rocket-02.jpg"
     },
     {
         "id": "0019",
-        "name": "Foguete b",
-        "family": "",
-        "value": 10000.0,
+        "name": "Titan II GLV",
+        "family": "Titan",
+        "value": 470000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The Titan II GLV (Gemini Launch Vehicle) or Gemini-Titan II was an American expendable launch system derived from the Titan II missile, which was used to launch twelve Gemini missions for NASA between 1964 and 1966.",
+            "portuguese": "O Titan II GLV (Gemini Launch Vehicle) ou Gemini-Titan, foi um veículo de lançamento descartável de origem Norte americana. Fabricado pela Martin Marietta, foi uma adaptação do ICBM Titan II, para missões tripuladas do Projeto Gemini."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Gemini-Titan_11_Launch_-_GPN-2000-001020.jpg/220px-Gemini-Titan_11_Launch_-_GPN-2000-001020.jpg"
     },
     {
         "id": "0020",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Titan 23G",
+        "family": "Titan",
+        "value": 580000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The Titan 23G, Titan II(23)G, Titan 2(23)G or Titan II SLV was an American expendable launch system derived from the LGM-25C Titan II intercontinental ballistic missile. Retired Titan II missiles were converted by Martin Marietta, into which the Glenn L. Martin Company, which built the original Titan II, had merged.",
+            "portuguese": "O Titan 23G, ou Titan II(23)G, ou Titan 2(23)G ou ainda Titan II SLV, foi um veículo de lançamento descartável de origem Norte americana. Fabricado pela Martin Marietta, foi uma adaptação do Titan II, para missões de lançamento de satélites para a USAF, NASA e também a NOAA."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Titan_23G_rocket.gif/220px-Titan_23G_rocket.gif"
     },
     {
         "id": "0021",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Titan IIIE",
+        "family": "Titan",
+        "value": 589000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The Titan IIIE or Titan 3E, also known as the Titan III-Centaur, was an American expendable launch system. Launched seven times between 1974 and 1977,[4] it enabled several high-profile NASA missions, including the Voyager and Viking planetary probes and the joint West Germany-U.S.",
+            "portuguese": "O Titan IIIE ou Titan 3E, ou ainda Titan III-Centaur, foi um veículo de lançamento descartável de origem norte-americana. Fabricado pela Martin Marietta."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Titan_3E_Centaur_launches_Voyager_2.jpg/220px-Titan_3E_Centaur_launches_Voyager_2.jpg"
     },
     {
         "id": "0022",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Titan 34D",
+        "family": "Titan",
+        "value": 700000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The Titan 34D was a United States expendable launch vehicle used to launch a number of satellites for military applications.",
+            "portuguese": "O Titan 34D, foi um veículo de lançamento descartável de origem Norte americana. Fabricado pela Martin Marietta."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/DF-SC-83-03173_cropped.jpeg/220px-DF-SC-83-03173_cropped.jpeg"
     },
     {
         "id": "0023",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "C. Titan III ",
+        "family": "Titan",
+        "value": 690000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The Commercial Titan III, also known as CT-3 or CT-III, was an American expendable launch system, developed by Martin Marietta during the late 1980s and flown four times during the early 1990s.",
+            "portuguese": "O Commercial Titan III, também conhecido como CT-3 ou CT-III foi um foguete descartável estadunidense, desenvolvido pela Martin Marietta durante a década de 1980 e voou quatro vezes durante o início da década de 1990."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Commercial_Titan_3_launching_Mars_Observer.jpg/200px-Commercial_Titan_3_launching_Mars_Observer.jpg"
     },
     {
         "id": "0024",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Titan IV",
+        "family": "Titan",
+        "value": 650000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "Titan IV was a family of heavy-lift space launch vehicles developed by Martin Marietta and operated by the United States Air Force from 1989 to 2005.",
+            "portuguese": "O Titan IV, foi um veículo de lançamento descartável de origem Norte americana. Fabricado pela Lockheed Martin."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Titan4B_on_Launch_Complex_40.jpg/220px-Titan4B_on_Launch_Complex_40.jpg"
     },
     {
         "id": "0025",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "VLS-1",
+        "family": "VLS",
+        "value": 490000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The VLS-1 (Portuguese: Veículo Lançador de Satélites) was the Brazilian Space Agency's main satellite launch vehicle.[2] The launch vehicle was to be capable of launching satellites into orbit. The launch site was located at the Alcântara Launch Center[3] due to its proximity to the equator.",
+            "portuguese": "O Veículo Lançador de Satélites ou o VLS é um modelo de foguete desenvolvido no Brasil com a finalidade de colocar satélites na órbita da Terra. Este foguete teve como base componentes desenvolvidos sobre a tecnologia empregada nos foguetes da família Sonda."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Vls_1_v03.jpg/250px-Vls_1_v03.jpg"
     },
     {
         "id": "0026",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Ariane 1",
+        "family": "Ariane",
+        "value": 135000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "Ariane 1 was the first rocket in the Ariane family of expendable launch systems. It was developed and operated by the European Space Agency (ESA), which had been formed in 1973, the same year that development of the launcher had commenced.",
+            "portuguese": "O primeiro lançamento ocorreu em 24 de Dezembro de 1979 e teve sucesso. O segundo explodiu no seu lançamento. O terceiro teve sucesso colocando em órbita três satélites. O quarto também teve sucesso."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ariane_1_Le_Bourget_FRA_001.jpg/200px-Ariane_1_Le_Bourget_FRA_001.jpg"
     },
     {
         "id": "0027",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Ariane 2",
+        "family": "Ariane",
+        "value": 235000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "Ariane 2 was a European expendable space launch vehicle, operated by the European Space Agency (ESA) between 1986 and 1989 as part of Ariane family of rockets.",
+            "portuguese": "O Ariane 2 foi um foguete descartável europeu, que foi usado por seis lançamentos entre os anos de 1986 e 1989. Foi um membro da família de foguetes Ariane, e foi produzido pela Aérospatiale na França."
         },
-        "imageUrl": ""
+        "imageUrl": "https://space.skyrocket.de/img_lau/ariane-1__ecs-1__1.jpg"
     },
     {
         "id": "0028",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Ariane 3 ",
+        "family": "Ariane",
+        "value": 370000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "Ariane 3 was a European expendable carrier rocket, which was used for eleven launches between 1984 and 1989. It was a member of the Ariane family of rockets. The principal manufacturer for the Ariane 3 was Aérospatiale, while the lead agency for its development was the Centre National d'Etudes Spatiales (CNES).",
+            "portuguese": "O Ariane 3 foi um foguete descartável europeu, que foi usado em onze lançamentos entre 1984 e 1989. Foi um membro da família de foguetes Ariane, o mesmo foi derivado do Ariane 2, embora ele voou antes. Ele foi projetado pelo Centre National d'Études Spatiales, e produzido pela Aérospatiale, na França."
         },
-        "imageUrl": ""
+        "imageUrl": "https://space.skyrocket.de/img_lau/ariane-3__ecs-2_telecom-1a__1.jpg"
     },
     {
         "id": "0029",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Ariane 4",
+        "family": "Ariane",
+        "value": 510000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "The Ariane 4 was a European expendable space launch system, developed by the Centre national d'études spatiales (CNES), the French space agency, for the European Space Agency (ESA). It was manufactured by ArianeGroup and marketed by Arianespace.",
+            "portuguese": "O foguete Ariane 4 se assemelha a primeira vista aos seus antecessores, Ariane, Ariane 1, Ariane 2 e Ariane 3. Como eles, trata-se de um foguete de três estágios, só que mais potente. Ele estava igualmente disponível em diferentes versões, utilizando ou não foguetes auxiliares."
         },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ariane42P_rocket.png/250px-Ariane42P_rocket.png"
     },
     {
         "id": "0030",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
+        "name": "Minotaur-C",
+        "family": "Minotaur",
+        "value": 600000.0,
         "description": {
-            "english": "",
-            "portuguese": ""
+            "english": "Minotaur-C (Minotaur Commercial), formerly known as Taurus[1] or Taurus XL, is a four stage solid fueled launch vehicle built in the United States by Orbital Sciences (now Northrop Grumman) and launched from SLC-576E at California's Vandenberg Air Force Base.",
+            "portuguese": "Minotaur-C (Minotaur Commercial), anteriormente conhecido como Taurus[1] ou Taurus XL, é a denominação de um foguete de quatro estágios, movido a combustível sólido de origem Norte americana construído pela Orbital Sciences Corporation. Ele é baseado no foguete Pegasus do mesmo fabricante."
         },
-        "imageUrl": ""
-    },
-    {
-        "id": "0031",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0032",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0033",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0034",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0035",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0036",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0037",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0038",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0039",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0040",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0020",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0021",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0022",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0023",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0024",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0025",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0026",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0027",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0028",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0029",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0030",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0031",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0032",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0033",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0034",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0035",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0036",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0037",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0038",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0039",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
-    },
-    {
-        "id": "0040",
-        "name": "Foguete ",
-        "family": "",
-        "value": 10000.0,
-        "description": {
-            "english": "",
-            "portuguese": ""
-        },
-        "imageUrl": ""
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Taurus_rocket.jpg/200px-Taurus_rocket.jpg"
     }
 
 ]
